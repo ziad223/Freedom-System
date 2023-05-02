@@ -12,12 +12,12 @@ const Login = () => {
         if(username === 'freedom055' || password === 'freedom@055'){
             navigate('/home');
           }else{
-          setError("UserName Or Password Is Not Correct");
+          setError("Username Or Password Is Not Correct");
           };
           
 
           if(username === '' || password === ''){
-            setError("UserName Or Password is Empty")
+            setError("Username Or Password is Empty")
           }
 
           setUserName('');
