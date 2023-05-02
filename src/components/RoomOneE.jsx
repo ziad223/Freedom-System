@@ -35,8 +35,6 @@ const RoomOneE = () => {
         <h1>Room 1 English</h1>
         <div className="l">
         <h2  className='length'> Number Of Student : {roomOneUsers.length}</h2>
-        <h2  className='length'> Total Paid : {roomOneUsers.length}</h2>
-        <h2  className='length'> Total Residual : {roomOneUsers.length}</h2>
         </div>
         <form onSubmit={handleSubmit}>
         <input type="text" value={name}  placeholder='Enter name' onChange = {(e) =>setName(e.target.value)} />
