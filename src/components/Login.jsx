@@ -6,6 +6,11 @@ const Login = () => {
     const [password , setPassword] = useState();
     const [error , setError] = useState();
     const navigate = useNavigate();
+      const inputRef = useRef();
+
+    window.onload = function(){
+        inputRef.current.focus();
+    }
 
       const handleClick =() =>{
      
@@ -35,7 +40,7 @@ const Login = () => {
 
         <div className="content">
         <i class="fa-regular fa-user"></i>
-        <input type="text" placeholder='username'  value={username}
+        <input type="text" placeholder='username' ref={inputRef}  value={username}
         onChange={(e) =>setUserName(e.target.value)} />
         </div>
 
